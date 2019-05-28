@@ -11,9 +11,9 @@ conn = psycopg2.connect(
 
 cur = conn.cursor()
 
-# df = pd.read_csv('Estrategias.csv', encoding='latin1')
+df = pd.read_csv('Estrategias.csv', encoding='latin1')
 
-# df.to_sql('Estrategias', conn, if_exists='append')
+df.to_sql('Estrategias', conn, if_exists='append')
 
 #
 try:
